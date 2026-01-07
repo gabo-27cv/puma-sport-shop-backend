@@ -10,6 +10,8 @@ const pool = new Pool({
   max: 20, // Número máximo de conexiones
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 2000,
+  ssl: { rejectUnauthorized: false } 
+
 });
 
 // Verificar conexión
