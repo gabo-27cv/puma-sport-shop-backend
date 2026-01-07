@@ -15,7 +15,12 @@ const PORT = process.env.PORT || 3001; // ⚠️ CAMBIAR A 3001
 
 // Middlewares
 app.use(cors({
-  origin: ['http://localhost:3002', 'http://localhost:5173', 'http://localhost:3000'], // ⚠️ AGREGAR MÚLTIPLES ORÍGENES
+  origin: [
+    'http://localhost:3002',
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://puma-sport-shop-frontend-b168.vercel.app' // <--- frontend Vercel
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization']
