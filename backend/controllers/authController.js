@@ -120,6 +120,7 @@ exports.login = async (req, res) => {
         nombre: user.nombre,
         email: user.email,
         rol: user.rol
+        role: user.rol 
       },
       token
     });
